@@ -3,18 +3,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2e2e2e; /* Solid Grey Background */
+    background-color: #2e2e2e;
     color: white;
 }
 
-/* Header & Navigation */
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #3a3a3a;
     padding: 15px 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -33,7 +32,7 @@ nav a:hover {
     color: #ffcc00;
 }
 
-/* Banner Section */
+/* Banner */
 .banner {
     text-align: center;
     padding: 80px 20px;
@@ -49,19 +48,34 @@ nav a:hover {
     border-radius: 10px;
 }
 
-/* FAQ Section (Single Box) */
+/* Steps Section */
+.steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: #4a4a4a;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+/* FAQ Section */
 .faq-box {
     background: #4a4a4a;
     padding: 20px;
     border-radius: 10px;
     max-width: 800px;
     margin: auto;
-    border: 1px solid #555;
+    border: 2px solid #555;
 }
 
-/* FAQ Questions */
 .faq-item {
     border-bottom: 1px solid #555;
+    padding: 10px 0;
 }
 
 .faq-item:last-child {
@@ -75,10 +89,9 @@ nav a:hover {
     font-size: 16px;
     font-weight: bold;
     border: none;
-    background: transparent;
+    background: none;
     color: white;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .faq-question:hover {
@@ -87,8 +100,18 @@ nav a:hover {
 
 .faq-answer {
     display: none;
-    padding: 15px;
+    padding: 10px;
     font-size: 14px;
-    background: #666;
+    background: #5a5a5a;
     color: white;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #3a3a3a;
+    font-size: 14px;
 }
