@@ -1,60 +1,72 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background: #2b2b2b;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Full Page Grey Background */
+body {
+    background-color: #808080; /* Solid grey theme */
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
 }
 
 /* Main Container */
-.main-container {
-    width: 80%;
-    max-width: 900px;
-    margin: 100px auto;
-    padding: 40px;
-    background: #3a3a3a;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Features */
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin: 30px 0;
-}
-
-.feature-box {
-    background: #4a4a4a;
+.container {
+    width: 90%;
+    max-width: 400px;
     padding: 20px;
-    width: 250px;
     border-radius: 10px;
-    text-align: center;
 }
 
-.feature-box i {
-    font-size: 40px;
+/* Header Section */
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Sections */
+.refer-earn, .download {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Section Titles */
+h2 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-/* Coming Soon Button */
-.coming-soon-btn {
-    background-color: #888;
-    border: none;
-    padding: 12px 25px;
-    color: white;
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: not-allowed;
-    margin-top: 20px;
+/* Paragraph Styling */
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
-/* Footer */
-footer {
-    margin-top: 30px;
-    font-size: 14px;
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: white;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #d3d3d3;
 }
