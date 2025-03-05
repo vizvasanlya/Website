@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Google Font */
 }
 
 /* Full Page Grey Background */
@@ -32,30 +32,43 @@ header h1 {
     margin-bottom: 20px;
 }
 
-/* Sections */
-.refer-earn, .download {
+/* Referral Section */
+.refer-earn {
     margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.refer-earn h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.refer-earn p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffd700; /* Gold color for premium look */
+    margin-top: 10px;
+}
+
+/* Download Section */
+.download {
+    margin-top: 20px;
     padding: 15px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Section Titles */
 h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-/* Paragraph Styling */
-p {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
 /* Button Styling */
 .btn {
     display: inline-block;
-    padding: 12px 20px;
+    padding: 12px 24px;
     background-color: white;
     color: #333;
     font-size: 18px;
@@ -65,6 +78,7 @@ p {
     border: none;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
+    margin-top: 10px;
 }
 
 .btn:hover {
